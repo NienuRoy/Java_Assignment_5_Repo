@@ -1,7 +1,6 @@
-
 public class Sundae extends IceCream{
 
-	//Declas=ring variables for this class
+	//Declaring variables for this class
 	private String toppingName;
 	private int toppingCost;
 

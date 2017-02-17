@@ -1,4 +1,3 @@
-
 public class Checkout {
 
 	//Variables for this class are declared

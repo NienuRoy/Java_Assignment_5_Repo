@@ -1,4 +1,3 @@
-
 public class DessertShoppe {
 	
 	public final static double TAX_RATE = 6.5;

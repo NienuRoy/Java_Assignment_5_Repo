@@ -1,4 +1,3 @@
-
 public class Candy extends DessertItem{
 
 	//Initializing private variables for this class

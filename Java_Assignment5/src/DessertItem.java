@@ -1,4 +1,3 @@
-
 public abstract class DessertItem extends java.lang.Object{
 	
 	//Declaring variables as protected so that subclasses can also access

@@ -1,4 +1,3 @@
-
 public class IceCream extends DessertItem{
 	//protected so that sundae class can use it
 	protected int cost;
