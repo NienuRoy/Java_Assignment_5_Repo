@@ -1,10 +1,15 @@
 public abstract class DessertItem extends java.lang.Object{
-	
+
 	//Declaring variables as protected so that subclasses can also access
 	protected java.lang.String name;
 	protected int cost;
 
-	public DessertItem(String name) {
+	//Declaring a null constructor
+	public DessertItem(){
+
+	}
+
+	public DessertItem(java.lang.String name) {
 		super();
 		//Conditions for displaying name
 		if(name.length()>DessertShoppe.ITEM_NAME_MAX_SIZE){
@@ -16,7 +21,11 @@ public abstract class DessertItem extends java.lang.Object{
 		else
 			this.name=name;			
 	}
-	
+
+	public final java.lang.String getName(){
+		return name;
+	}
+
 	public abstract  int getCost();
-	
+
 }

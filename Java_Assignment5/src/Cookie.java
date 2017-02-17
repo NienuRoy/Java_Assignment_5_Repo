@@ -1,8 +1,8 @@
 public class Cookie extends DessertItem{
 
 	//Initializing private variables for this class
-	private  int number;
-	private double pricePerDozen;
+	private int number;
+	private int pricePerDozen;
 
 	public Cookie(String name, int number, int pricePerDozen) {
 		super(name);
@@ -18,7 +18,7 @@ public class Cookie extends DessertItem{
 
 	@Override
 	public String toString(){
-		return number +" @ " +pricePerDozen +" /dz.\n" +name +"\t\t" +DessertShoppe.cents2dollarsAndCents(getCost());
+		return number +" @ " +DessertShoppe.cents2dollarsAndCents(pricePerDozen) +" /dz.\n" +name +"\t\t" +DessertShoppe.cents2dollarsAndCents(getCost());
 	}
 
 }
