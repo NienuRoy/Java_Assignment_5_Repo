@@ -87,8 +87,4 @@ public class Extra_Credit {
 		spiralOrder(spiralMatrix);
 
 	}
-
-
-
-
 }

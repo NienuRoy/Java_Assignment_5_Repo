@@ -19,5 +19,4 @@ public class IceCream extends DessertItem{
 		//Cost is converted to string for display
 		return this.name + "\t\t" + DessertShoppe.cents2dollarsAndCents(getCost());
 	}
-
 }

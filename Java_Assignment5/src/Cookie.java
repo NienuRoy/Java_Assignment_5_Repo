@@ -22,5 +22,4 @@ public class Cookie extends DessertItem{
 		return number +" @ " +pricePerDozen +" /dz.\n" +name +"\t\t" +DessertShoppe.cents2dollarsAndCents(getCost());
 	}
 
-
 }

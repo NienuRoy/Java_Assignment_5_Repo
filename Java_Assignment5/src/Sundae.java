@@ -21,5 +21,4 @@ public class Sundae extends IceCream{
 	public String toString() {
 		return toppingName + " Sundae with \n" +name + "\t\t" +DessertShoppe.cents2dollarsAndCents(getCost());
 	}
-
 }
