@@ -76,8 +76,8 @@ public class Extra_Credit {
 
 	public static void main(String[] args){
 
-		int[] mergeArray1 = {1,6,7};
-		int[] mergeArray2 = {2,3,8};
+		int[] mergeArray1 = {1,4,15};
+		int[] mergeArray2 = {2,8,9};
 
 		merge(mergeArray1,3,mergeArray2,3);
 
