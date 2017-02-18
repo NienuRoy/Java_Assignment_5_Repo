@@ -12,11 +12,8 @@ public class Extra_Credit {
 
 		int[] result = new int[m+n];
 
-		if(nums1.length==0){
-			System.out.println("The array nums1 is empty.Printing array nums2 alone "+Arrays.toString(nums2));
-		}
-		else if(nums2.length==0){
-			System.out.println("The array nums2 is empty.Printing array nums1 alone "+Arrays.toString(nums1));
+		if(nums1.length==0 || nums2.length==0){
+			System.out.println("One of the arrays or both are empty");
 		}
 		else{
 			//Keep looping to get the numbers in the array in ascending order, we will be left with one
