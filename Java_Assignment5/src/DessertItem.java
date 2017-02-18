@@ -11,8 +11,8 @@ public abstract class DessertItem extends java.lang.Object{
 
 	public DessertItem(java.lang.String name) {
 		super();
-		//Conditions for displaying name
-		if(name.length()>DessertShoppe.ITEM_NAME_MAX_SIZE){
+		
+		if(name.length()>DessertShoppe.ITEM_NAME_MAX_SIZE){   //Conditions for displaying name
 			this.name=name.substring(0,DessertShoppe.ITEM_NAME_MAX_SIZE);
 		}
 		else if(name.length()<12){

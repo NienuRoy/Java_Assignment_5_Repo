@@ -12,8 +12,8 @@ public class Cookie extends DessertItem{
 
 	@Override
 	public int getCost() {
-		//Calculation for the cost of cookies
-		return (int)Math.round(number * pricePerDozen/12);
+		
+		return (int)Math.round(number * pricePerDozen/12); //Calculation for the cost of cookies
 	}
 
 	@Override
