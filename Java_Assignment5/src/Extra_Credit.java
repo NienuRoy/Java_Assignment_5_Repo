@@ -54,7 +54,6 @@ public class Extra_Credit {
 
 		while(rbeg<m && cbeg<n){
 
-
 			for(i=cbeg;i<=clst;i++){  //Loop beginning the first row
 				result.add(matrix[rbeg][i]);
 			}
