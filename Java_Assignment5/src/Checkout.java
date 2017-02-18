@@ -46,7 +46,7 @@ public class Checkout {
 	}
 
 	public String toString(){	
-		System.out.println();
+		
 		System.out.println("\t" +DessertShoppe.STORE_NAME);
 		System.out.println("\t--------------------");
 		System.out.println();

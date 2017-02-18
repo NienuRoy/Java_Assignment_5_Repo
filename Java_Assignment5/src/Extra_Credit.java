@@ -12,23 +12,31 @@ public class Extra_Credit {
 
 		int[] result = new int[m+n];
 
-		//Keep looping to get the numbers in the array in ascending order, we will be left with one
-		while(i<m && j<n){
-			if(nums1[i]<nums2[j]){
+		if(nums1.length==0){
+			System.out.println("The array nums1 is empty.Printing array nums2 alone "+Arrays.toString(nums2));
+		}
+		else if(nums2.length==0){
+			System.out.println("The array nums2 is empty.Printing array nums1 alone "+Arrays.toString(nums1));
+		}
+		else{
+			//Keep looping to get the numbers in the array in ascending order, we will be left with one
+			while(i<m && j<n){
+				if(nums1[i]<nums2[j]){
+					result[k++]=nums1[i++];
+				}
+				else{
+					result[k++]=nums2[j++];
+				}
+			}
+			//To get the last element from the array, do the below, one of the while loops will not have an output, which is okay
+			while(i<m){
 				result[k++]=nums1[i++];
 			}
-			else{
+			while(j<n){
 				result[k++]=nums2[j++];
 			}
+			System.out.println(Arrays.toString(result)); //Print the result
 		}
-		//To get the last element from the array, do the below, one of the while loops will not have an output, which is okay
-		while(i<m){
-			result[k++]=nums1[i++];
-		}
-		while(j<n){
-			result[k++]=nums2[j++];
-		}
-		System.out.println(Arrays.toString(result)); //Print the result
 	}
 
 
@@ -46,26 +54,26 @@ public class Extra_Credit {
 
 		while(rbeg<m && cbeg<n){
 
-			//Loop the first row
-			for(i=cbeg;i<=clst;++i){
+
+			for(i=cbeg;i<=clst;i++){  //Loop beginning the first row
 				result.add(matrix[rbeg][i]);
 			}
 			rbeg++;	//One row is already printed, so increment it(from the first row) 
 
-			//Loop the last column
-			for(i=rbeg;i<=rlst;++i){
+
+			for(i=rbeg;i<=rlst;i++){  //Loop from the last column
 				result.add(matrix[i][clst]);
 			}
 			clst--;	//This column is already printed, so decrement it(from the last column)
 
-			//Loop the last row from last column
-			for(i=clst;i>=cbeg;--i){
+
+			for(i=clst;i>=cbeg;i--){  //Loop from the last row
 				result.add(matrix[rlst][i]);
 			}
 			rlst--;
 
-			//Loop the first column from the last row
-			for(i=rlst;i>=rbeg;--i){
+
+			for(i=rlst;i>=rbeg;i--){  //Loop the first column
 				result.add(matrix[i][cbeg]);
 			}
 			cbeg++;
@@ -76,7 +84,7 @@ public class Extra_Credit {
 
 	public static void main(String[] args){
 
-		int[] mergeArray1 = {1,4,15};
+		int[] mergeArray1 = {1,4,7};
 		int[] mergeArray2 = {2,8,9};
 
 		merge(mergeArray1,3,mergeArray2,3);
